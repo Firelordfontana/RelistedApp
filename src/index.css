@@ -1,0 +1,25 @@
+/* Keep body dark & clean; Tailwind handles all component styling */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #020617; /* slate-950 */
+  color: #f1f5f9; /* slate-100 */
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Hide horizontal scrollbar on the Live Chase Ticker */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
